@@ -1,0 +1,28 @@
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    background-repeat: repeat-x;
+    background-image: url('../img/header-texture.png');
+    background-color: #fff;
+}
+
+#header .nav-section{
+    display: inline-block;
+    font-size: 25px;
+    padding-top: 10px;
+    position: relative;
+    min-width: 177px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#header #logo{
+    position: absolute;
+    top: -24px;
+    left: 0px;
+}
