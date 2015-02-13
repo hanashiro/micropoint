@@ -1,3 +1,7 @@
+/*************************************
+*******     Header
+*************************************/
+
 #header{
     position: fixed;
     top: 0;
@@ -20,6 +24,7 @@
     box-sizing: border-box;
     text-align: center;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 #header .nav-section:hover{
@@ -30,4 +35,154 @@
     position: absolute;
     top: -24px;
     left: 0px;
+    cursor: initial;
+}
+
+
+/*************************************
+*******     General
+*************************************/
+.body-section{
+    min-height: 340px;
+    font-size: 16px;
+    position: relative;
+    top: 45px;
+    text-align: center;
+}
+
+.body-section-location{
+    position: absolute;
+    top: -40px;
+}
+
+.body-section-container{
+    width: 980px;
+    display: inline-flex;
+    text-align: left;
+}
+
+.section-title{
+    font-size: 65px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.section-primary{
+    color: #fff;
+    background-color: #003399;
+}
+
+.section-secondary{
+    color: #656565;
+    background-color: #fff;
+}
+
+/*************************************
+*******     Home
+*************************************/
+
+/*************************************
+*******     Who
+*************************************/
+
+/*************************************
+*******     Services
+*************************************/
+
+
+/*************************************
+*******     Contact
+*************************************/
+#section-contact{
+    position: relative;
+    background-image: url("../images/map.png");
+    height: 800px;
+}
+
+#section-contact hr{
+    border: 2px solid #562739;
+}
+
+#section-contact .container-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#contact-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
+.contact-information{
+}
+
+.contact-information .section-subtitle, .contact-form .section-subtitle{
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.contact-information .glyphicon, .contact-information .fa{
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-information .fa-map-marker{
+    padding-left: 3px;
+}
+
+
+.contact-form{
+}
+
+.contact-form input, .contact-form textarea{
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contact-form input[type=submit]{
+    background-color: #756b69;
+    font-weight: bolder;
+    float: right;
+    padding: 15px 35px;
+    border: 0;
+}
+
+
+/*************************************
+*******     Footer
+*************************************/
+#main-footer{
+    position: relative;
+    color: #fff;
+    height: 60px;
+    padding-top: 10px;
+    background-color: #063c9e;
+    box-sizing: border-box;
+}
+
+#footer-copyright{
+}
+
+#twittercounts{
+    float: right;
+    margin-right: 10px;
+}
+
+#footer-social-media .fa{
+    color: #fff;
+    float: right;
+}
+#footer-social-media .fa:hover{
+    color: #a2a2a2;
 }

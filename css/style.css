@@ -3,8 +3,17 @@
     src: local('LeagueGothic-Regular'), local('LeagueGothic'),url('../font/LeagueGothic-Regular.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Calibri';
+    src: local('calibri'), local('Calibri'),url('../font/calibri.otf') format('opentype');
+}
+
 *{
-    font-family: 'LeagueGothic-Regular';
+    font-family: 'Calibri';
+}
+
+.gothic-font, .gothic-font *{
+    font-family: 'LeagueGothic-Regular' !important;
 }
 
 body{
@@ -12,5 +21,8 @@ body{
     margin: 0; 
     background-color: #fff;
 }
+
+
+
 
 

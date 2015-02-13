@@ -9,20 +9,23 @@
     <link rel="stylesheet" href="css/carousel.css" ></link>
     <link rel="stylesheet" href="css/style.css" ></link>
     <link rel="stylesheet" href="css/index.css" ></link>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
-<body>
+<body id="body" >
     
     <header id="header" >
-        <nav>
-            <div class="nav-section" onclick="$('#section-home').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Home</div>
-            <div class="nav-section" onclick="$('#section-home').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Quem Somos</div>
+        <nav class="gothic-font" >
+            <div class="nav-section" onclick="$('#body').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Home</div>
+            <div class="nav-section" onclick="$('#section-who-location').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Quem Somos</div>
             <div class="nav-section" style="width:265px;" ><img id="logo" src="img/micropoint-logo.png" ></div>
-            <div class="nav-section" onclick="$('#section-home').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Servi&ccedil;os</div>
-            <div class="nav-section" onclick="$('#section-home').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Contato</div>
+            <div class="nav-section" onclick="$('#section-services-location').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Servi&ccedil;os</div>
+            <div class="nav-section" onclick="$('#section-contact-location').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});" >Contato</div>
         </nav>
     </header>
 
-    <div id="section-home" style="position: relative;top: 45px; width: 100%; background-color: #003399; overflow: hidden;">
+    <!-- HOME -->
+    <section id="section-home" style="overflow: hidden;" class="body-section section-primary">
         <div style="position: relative; left: 50%; width: 5000px; text-align: center; margin-left: -2500px;">
             <!-- Jssor Slider Begin -->
             <div id="slider1_container" style="position: relative; margin: 0 auto;
@@ -210,10 +213,77 @@
             </div>
             <!-- Jssor Slider End -->
         </div>
-    </div>
+    </section>
+
+    <!-- QUEMSOMOS -->
+    <section class="body-section section-secondary container-fluid" id="section-who" >
+        <span class="body-section-location" id="section-who-location" ></span>
+        <div class="body-section-container" >
+                <h1 class="section-title gothic-font" >Quem Somos</h1>
+        </div>
+
+    </section>
+
+    <!-- SERVICOS -->
+    <section class="body-section section-primary container-fluid" id="section-services" >
+        <span class="body-section-location" id="section-services-location" ></span>
+        <div class="body-section-container" >
+            <h1 class="section-title  gothic-font" >SERVI&Ccedil;OS</h1>
+        </div>
+        
+    </section>
+    
+    <!-- CONTATO -->
+    <section class="body-section container-fluid" id="section-contact" >
+        <span class="body-section-location" id="section-contact-location" ></span>
+        <div class="container-shadow" >
+            <div class="section-secondary col-md-10 col-md-offset-1" id="contact-container" >
+                <h1 class="section-title  gothic-font" >CONTATO</h1>
+                <div class="row">
+                    <div class="col-md-7 contact-information" >
+                        <h4 class="section-subtitle" >INFORMA&Ccedil;&Otilde;ES</h4>
+                        <hr>
+                        <i class="fa fa-calendar" ></i> Domingo a Domingo: 24h por dia <br>
+                        <i class="fa fa-map-marker" ></i> Endere&ccedil;o: Rua Domingos Lemes, 77 - Santa Rita - Guaratinguet&aacute; <br>
+                        <i class="glyphicon glyphicon-phone" ></i> Telefone: +55 (12) 3128-4800 <br>
+                        <i class="fa fa-envelope" ></i> Email: dp@hospitalfreigalvao.com.br <br>
+                    </div>
+                    <div class="col-md-5 contact-form" >
+                        <h4 class="section-subtitle" >FORMUL&Aacute;RIO</h4>
+                        <hr>
+                        <form>
+                            <input type="text" placeholder="Nome:" class="form-control" >
+                            <input type="email" placeholder="Email:" class="form-control" >
+                            <input type="text" placeholder="Assunto:" class="form-control" >
+                            <textarea placeholder="Mensagem:" class="form-control" ></textarea>
+                            <input type="submit" value="ENVIAR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <footer id="main-footer" class="container-fluid">
+        <div class="row" >
+            <div id="footer-copyright" class="col-md-6 col-md-offset-1" >
+                <i class="fa fa-copyright" ></i> 2015 Micro Point Inform&aacute;tica - Todos direitos reservados<br>
+                S&atilde;o Jos&eacute; dos Campos - SP
+            </div>
+            <div id="footer-social-media" class="col-md-2 col-md-offset-2" >
+                <a><i class="fa fa-twitter fa-3x" ></i></a>
+                <span id="twittercounts" >
+                    @micro_point_inf <br>
+                    @hugolourencopmp
+                </span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 <script type="text/javascript" src="js/animatescroll.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
