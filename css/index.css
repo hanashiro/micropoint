@@ -57,14 +57,19 @@
 
 .body-section-container{
     width: 980px;
-    display: inline-flex;
+    display: inline-block;
     text-align: left;
+}
+
+.body-section-container ul{
+    padding-left: 20px;
 }
 
 .section-title{
     font-size: 65px;
     font-weight: bolder;
     text-transform: uppercase;
+    display: block;
 }
 
 
@@ -73,9 +78,28 @@
     background-color: #003399;
 }
 
+.section-primary .section-illustration{
+    float: right;
+    margin-left: 20px;
+}
+
+.section-primary .section-content{
+    /* float: left; */
+}
+
 .section-secondary{
     color: #656565;
     background-color: #fff;
+}
+
+.section-secondary .section-illustration{
+    float: left;
+    margin-right: 20px;
+}
+
+.section-secondary .section-content{
+    float: left;
+    width: 49%;
 }
 
 /*************************************
