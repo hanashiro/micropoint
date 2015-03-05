@@ -88,6 +88,16 @@
     /* float: left; */
 }
 
+.section-primary a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.section-primary a:hover {
+    color: #ccc;
+}
+
 .section-secondary{
     color: #656565;
     background-color: #fff;
@@ -102,6 +112,14 @@
     float: left;
     width: 49%;
 }
+
+
+.sections-list, .sections-list ul{
+    padding-left: 10px;
+    list-style: none;
+}
+
+
 
 /*************************************
 *******     Home
