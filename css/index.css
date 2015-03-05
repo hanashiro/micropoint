@@ -48,6 +48,7 @@
     position: relative;
     top: 45px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .body-section-location{
@@ -121,7 +122,7 @@
 #section-contact{
     position: relative;
     background-image: url("../images/map.png");
-    height: 500px;
+    height: 375px;
 }
 
 #section-contact hr{
@@ -144,6 +145,7 @@
 }
 
 .contact-information{
+    font-size: 20px;
 }
 
 .contact-information .section-subtitle, .contact-form .section-subtitle{
@@ -199,6 +201,7 @@
     padding-top: 23px;
     background-color: #063c9e;
     box-sizing: border-box;
+    text-align: center;
 }
 
 #footer-copyright{
